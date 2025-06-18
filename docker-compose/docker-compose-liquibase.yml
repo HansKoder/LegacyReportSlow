@@ -1,0 +1,14 @@
+services:
+  liquibase:
+    container_name: liquibase
+    image: liquibase/liquibase
+    command: update --changelog-file=changelog.xml --username=user --password=pass --url=jdbc:postgresql://db:5432/reportsdb
+    volumes:
+      - ./config/changelog.xml:/liquibase/changelog.xml
+      - ./scripts:/liquibase/scripts
+    networks:
+      - report-net
+
+
+networks:
+  report-net:
