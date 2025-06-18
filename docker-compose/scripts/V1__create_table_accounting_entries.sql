@@ -9,6 +9,5 @@ CREATE TABLE accounting_entries (
     currency TEXT,                        -- Debería normalizarse (ej: tabla de monedas)
     account_code TEXT,                    -- Ej: '110505' (activo corriente)
     account_name TEXT,                    -- 'Caja general' (debería ser tabla contable)
-    metadata JSONB,                       -- Campo libre
     created_at TIMESTAMP DEFAULT now()    -- Correcto, pero debería generarse desde app
 );
