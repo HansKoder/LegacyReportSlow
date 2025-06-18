@@ -12,12 +12,15 @@ public class GeneratorAccountingReportData {
     public static List<AccountingEntry> generateRandomData (int cant) {
         if (cant < 1) throw new IllegalArgumentException("Cant must be greater then zero");
 
+        CircularLinkedList<String> customerCycled = new CircularLinkedList<>(
+                List.of("Disney", "Warner Bros", "Adidas", "Hbo Max", "Nissan","Seven", "Suzuki"));
+
         List<AccountingEntry> entries = new ArrayList<>();
 
         for (int i = 0; i < cant; i++) {
             entries.add(
                     AccountingEntry.AccountingEntryBuilder.anAccountingEntry()
-                            .customerName("Cliente " + i)
+                            .customerName(customerCycled.next())
                             .customerTaxId("800." + i + "-9")
                             .documentCode("INV-2025-" + String.format("%05d", i))
                             .documentType("INVOICE")
