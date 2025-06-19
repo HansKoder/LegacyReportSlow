@@ -7,7 +7,7 @@ public class CircularLinkedList<T> {
     private Node<T> current;
 
     public CircularLinkedList(List<T> items) {
-        if (items == null || items.isEmpty()) throw new IllegalArgumentException("Lista vacía");
+        if (items == null || items.isEmpty()) throw new IllegalArgumentException("Empty list");
         Node<T> prev = null;
         for (T item : items) {
             Node<T> node = new Node<>(item);

@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface AccountingEntryService {
     List<AccountingEntry> findAll ();
+    List<AccountingEntry> getCustomerName (String customerName);
 }

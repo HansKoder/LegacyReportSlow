@@ -15,6 +15,12 @@ public class GeneratorAccountingReportData {
         CircularLinkedList<String> customerCycled = new CircularLinkedList<>(
                 List.of("Disney", "Warner Bros", "Adidas", "Hbo Max", "Nissan","Seven", "Suzuki"));
 
+        CircularLinkedList<String> concurrencyCycled = new CircularLinkedList<>(
+                List.of("USD", "COP", "EUR"));
+
+        CircularLinkedList<String> documentTypeCycled = new CircularLinkedList<>(
+                List.of("INVOICE", "RECEIPT"));
+
         List<AccountingEntry> entries = new ArrayList<>();
 
         for (int i = 0; i < cant; i++) {
@@ -22,11 +28,11 @@ public class GeneratorAccountingReportData {
                     AccountingEntry.AccountingEntryBuilder.anAccountingEntry()
                             .customerName(customerCycled.next())
                             .customerTaxId("800." + i + "-9")
-                            .documentCode("INV-2025-" + String.format("%05d", i))
-                            .documentType("INVOICE")
+                            .documentCode("DOC-2025-" + String.format("%05d", i))
+                            .documentType(documentTypeCycled.next())
                             .entryDate("2025-06-18")
                             .amount(BigDecimal.valueOf(Math.random() * 10000))
-                            .currency("USD")
+                            .currency(concurrencyCycled.next())
                             .accountCode("110505")
                             .accountName("Caja general")
                             .createdAt(LocalDateTime.now())

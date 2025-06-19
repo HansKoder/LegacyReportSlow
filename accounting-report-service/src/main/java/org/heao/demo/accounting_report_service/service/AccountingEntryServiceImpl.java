@@ -19,4 +19,9 @@ public class AccountingEntryServiceImpl implements AccountingEntryService {
     public List<AccountingEntry> findAll() {
         return repository.findAll();
     }
+
+    @Override
+    public List<AccountingEntry> getCustomerName(String customerName) {
+        return repository.findByCustomerName(customerName);
+    }
 }
