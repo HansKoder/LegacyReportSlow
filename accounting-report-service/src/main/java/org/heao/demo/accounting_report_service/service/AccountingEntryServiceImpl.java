@@ -1,7 +1,6 @@
 package org.heao.demo.accounting_report_service.service;
 
-import org.heao.demo.accounting_report_service.dto.AccountingEntryResponse;
-import org.heao.demo.accounting_report_service.mapper.AccountingEntryMapper;
+import org.heao.demo.accounting_report_service.entity.AccountingEntry;
 import org.heao.demo.accounting_report_service.repository.AccountingEntryRepository;
 import org.springframework.stereotype.Service;
 
@@ -17,9 +16,7 @@ public class AccountingEntryServiceImpl implements AccountingEntryService {
     }
 
     @Override
-    public List<AccountingEntryResponse> findAll() {
-        return repository.findAll()
-                .stream().map(AccountingEntryMapper::toResponse)
-                .toList();
+    public List<AccountingEntry> findAll() {
+        return repository.findAll();
     }
 }

@@ -1,0 +1,492 @@
+{
+  "aggregate": {
+    "counters": {
+      "vusers.created_by_name.[GET] get Accounting entries report": 90,
+      "vusers.created": 90,
+      "http.requests": 90,
+      "http.codes.200": 4,
+      "http.responses": 4,
+      "http.downloaded_bytes": 168982201,
+      "plugins.metrics-by-endpoint./api/v1/report/accounting-entries.codes.200": 1,
+      "vusers.failed": 89,
+      "vusers.completed": 1,
+      "plugins.metrics-by-endpoint./api/v1/report/accounting-entries.errors.ETIMEDOUT": 89,
+      "errors.ETIMEDOUT": 89
+    },
+    "rates": {
+      "http.request_rate": 1
+    },
+    "firstCounterAt": 1750299718964,
+    "firstHistogramAt": 1750299722067,
+    "lastCounterAt": 1750299809912,
+    "lastHistogramAt": 1750299731345,
+    "firstMetricAt": 1750299718964,
+    "lastMetricAt": 1750299809912,
+    "period": 1750299800000,
+    "summaries": {
+      "http.response_time": {
+        "min": 3082,
+        "max": 9378,
+        "count": 4,
+        "mean": 5952.8,
+        "p50": 4231.1,
+        "median": 4231.1,
+        "p75": 7117,
+        "p90": 7117,
+        "p95": 7117,
+        "p99": 7117,
+        "p999": 7117
+      },
+      "http.response_time.2xx": {
+        "min": 3082,
+        "max": 9378,
+        "count": 4,
+        "mean": 5952.8,
+        "p50": 4231.1,
+        "median": 4231.1,
+        "p75": 7117,
+        "p90": 7117,
+        "p95": 7117,
+        "p99": 7117,
+        "p999": 7117
+      },
+      "plugins.metrics-by-endpoint.response_time./api/v1/report/accounting-entries": {
+        "min": 3082,
+        "max": 3082,
+        "count": 1,
+        "mean": 3082,
+        "p50": 3072.4,
+        "median": 3072.4,
+        "p75": 3072.4,
+        "p90": 3072.4,
+        "p95": 3072.4,
+        "p99": 3072.4,
+        "p999": 3072.4
+      },
+      "vusers.session_length": {
+        "min": 8040.3,
+        "max": 8040.3,
+        "count": 1,
+        "mean": 8040.3,
+        "p50": 8024.5,
+        "median": 8024.5,
+        "p75": 8024.5,
+        "p90": 8024.5,
+        "p95": 8024.5,
+        "p99": 8024.5,
+        "p999": 8024.5
+      }
+    },
+    "histograms": {
+      "http.response_time": {
+        "min": 3082,
+        "max": 9378,
+        "count": 4,
+        "mean": 5952.8,
+        "p50": 4231.1,
+        "median": 4231.1,
+        "p75": 7117,
+        "p90": 7117,
+        "p95": 7117,
+        "p99": 7117,
+        "p999": 7117
+      },
+      "http.response_time.2xx": {
+        "min": 3082,
+        "max": 9378,
+        "count": 4,
+        "mean": 5952.8,
+        "p50": 4231.1,
+        "median": 4231.1,
+        "p75": 7117,
+        "p90": 7117,
+        "p95": 7117,
+        "p99": 7117,
+        "p999": 7117
+      },
+      "plugins.metrics-by-endpoint.response_time./api/v1/report/accounting-entries": {
+        "min": 3082,
+        "max": 3082,
+        "count": 1,
+        "mean": 3082,
+        "p50": 3072.4,
+        "median": 3072.4,
+        "p75": 3072.4,
+        "p90": 3072.4,
+        "p95": 3072.4,
+        "p99": 3072.4,
+        "p999": 3072.4
+      },
+      "vusers.session_length": {
+        "min": 8040.3,
+        "max": 8040.3,
+        "count": 1,
+        "mean": 8040.3,
+        "p50": 8024.5,
+        "median": 8024.5,
+        "p75": 8024.5,
+        "p90": 8024.5,
+        "p95": 8024.5,
+        "p99": 8024.5,
+        "p999": 8024.5
+      }
+    }
+  },
+  "intermediate": [
+    {
+      "counters": {
+        "vusers.created_by_name.[GET] get Accounting entries report": 2,
+        "vusers.created": 2,
+        "http.requests": 2
+      },
+      "rates": {
+        "http.request_rate": 2
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1750299718964,
+      "lastCounterAt": 1750299719965,
+      "firstMetricAt": 1750299718964,
+      "lastMetricAt": 1750299719965,
+      "period": "1750299710000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.[GET] get Accounting entries report": 8,
+        "vusers.created": 8,
+        "http.requests": 8,
+        "http.codes.200": 3,
+        "http.responses": 3,
+        "http.downloaded_bytes": 168982201,
+        "plugins.metrics-by-endpoint./api/v1/report/accounting-entries.codes.200": 1,
+        "vusers.failed": 0,
+        "vusers.completed": 1
+      },
+      "rates": {
+        "http.request_rate": 1
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1750299720965,
+      "firstHistogramAt": 1750299722067,
+      "lastCounterAt": 1750299729758,
+      "lastHistogramAt": 1750299728103,
+      "firstMetricAt": 1750299720965,
+      "lastMetricAt": 1750299729758,
+      "period": "1750299720000",
+      "summaries": {
+        "http.response_time": {
+          "min": 3082,
+          "max": 7135,
+          "count": 3,
+          "mean": 4811,
+          "p50": 4231.1,
+          "median": 4231.1,
+          "p75": 4231.1,
+          "p90": 4231.1,
+          "p95": 4231.1,
+          "p99": 4231.1,
+          "p999": 4231.1
+        },
+        "http.response_time.2xx": {
+          "min": 3082,
+          "max": 7135,
+          "count": 3,
+          "mean": 4811,
+          "p50": 4231.1,
+          "median": 4231.1,
+          "p75": 4231.1,
+          "p90": 4231.1,
+          "p95": 4231.1,
+          "p99": 4231.1,
+          "p999": 4231.1
+        },
+        "plugins.metrics-by-endpoint.response_time./api/v1/report/accounting-entries": {
+          "min": 3082,
+          "max": 3082,
+          "count": 1,
+          "mean": 3082,
+          "p50": 3072.4,
+          "median": 3072.4,
+          "p75": 3072.4,
+          "p90": 3072.4,
+          "p95": 3072.4,
+          "p99": 3072.4,
+          "p999": 3072.4
+        },
+        "vusers.session_length": {
+          "min": 8040.3,
+          "max": 8040.3,
+          "count": 1,
+          "mean": 8040.3,
+          "p50": 8024.5,
+          "median": 8024.5,
+          "p75": 8024.5,
+          "p90": 8024.5,
+          "p95": 8024.5,
+          "p99": 8024.5,
+          "p999": 8024.5
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 3082,
+          "max": 7135,
+          "count": 3,
+          "mean": 4811,
+          "p50": 4231.1,
+          "median": 4231.1,
+          "p75": 4231.1,
+          "p90": 4231.1,
+          "p95": 4231.1,
+          "p99": 4231.1,
+          "p999": 4231.1
+        },
+        "http.response_time.2xx": {
+          "min": 3082,
+          "max": 7135,
+          "count": 3,
+          "mean": 4811,
+          "p50": 4231.1,
+          "median": 4231.1,
+          "p75": 4231.1,
+          "p90": 4231.1,
+          "p95": 4231.1,
+          "p99": 4231.1,
+          "p999": 4231.1
+        },
+        "plugins.metrics-by-endpoint.response_time./api/v1/report/accounting-entries": {
+          "min": 3082,
+          "max": 3082,
+          "count": 1,
+          "mean": 3082,
+          "p50": 3072.4,
+          "median": 3072.4,
+          "p75": 3072.4,
+          "p90": 3072.4,
+          "p95": 3072.4,
+          "p99": 3072.4,
+          "p999": 3072.4
+        },
+        "vusers.session_length": {
+          "min": 8040.3,
+          "max": 8040.3,
+          "count": 1,
+          "mean": 8040.3,
+          "p50": 8024.5,
+          "median": 8024.5,
+          "p75": 8024.5,
+          "p90": 8024.5,
+          "p95": 8024.5,
+          "p99": 8024.5,
+          "p999": 8024.5
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.[GET] get Accounting entries report": 10,
+        "vusers.created": 10,
+        "http.requests": 10,
+        "http.codes.200": 1,
+        "http.responses": 1
+      },
+      "rates": {
+        "http.request_rate": 1
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1750299730744,
+      "firstHistogramAt": 1750299731345,
+      "lastCounterAt": 1750299739872,
+      "lastHistogramAt": 1750299731345,
+      "firstMetricAt": 1750299730744,
+      "lastMetricAt": 1750299739872,
+      "period": "1750299730000",
+      "summaries": {
+        "http.response_time": {
+          "min": 9378,
+          "max": 9378,
+          "count": 1,
+          "mean": 9378,
+          "p50": 9416.8,
+          "median": 9416.8,
+          "p75": 9416.8,
+          "p90": 9416.8,
+          "p95": 9416.8,
+          "p99": 9416.8,
+          "p999": 9416.8
+        },
+        "http.response_time.2xx": {
+          "min": 9378,
+          "max": 9378,
+          "count": 1,
+          "mean": 9378,
+          "p50": 9416.8,
+          "median": 9416.8,
+          "p75": 9416.8,
+          "p90": 9416.8,
+          "p95": 9416.8,
+          "p99": 9416.8,
+          "p999": 9416.8
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 9378,
+          "max": 9378,
+          "count": 1,
+          "mean": 9378,
+          "p50": 9416.8,
+          "median": 9416.8,
+          "p75": 9416.8,
+          "p90": 9416.8,
+          "p95": 9416.8,
+          "p99": 9416.8,
+          "p999": 9416.8
+        },
+        "http.response_time.2xx": {
+          "min": 9378,
+          "max": 9378,
+          "count": 1,
+          "mean": 9378,
+          "p50": 9416.8,
+          "median": 9416.8,
+          "p75": 9416.8,
+          "p90": 9416.8,
+          "p95": 9416.8,
+          "p99": 9416.8,
+          "p999": 9416.8
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.[GET] get Accounting entries report": 11,
+        "vusers.created": 11,
+        "http.requests": 11,
+        "plugins.metrics-by-endpoint./api/v1/report/accounting-entries.errors.ETIMEDOUT": 1,
+        "errors.ETIMEDOUT": 1,
+        "vusers.failed": 1
+      },
+      "rates": {
+        "http.request_rate": 2
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1750299740848,
+      "lastCounterAt": 1750299749971,
+      "firstMetricAt": 1750299740848,
+      "lastMetricAt": 1750299749971,
+      "period": "1750299740000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.[GET] get Accounting entries report": 20,
+        "vusers.created": 20,
+        "http.requests": 20,
+        "plugins.metrics-by-endpoint./api/v1/report/accounting-entries.errors.ETIMEDOUT": 8,
+        "errors.ETIMEDOUT": 8,
+        "vusers.failed": 8
+      },
+      "rates": {
+        "http.request_rate": 2
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1750299750031,
+      "lastCounterAt": 1750299759887,
+      "firstMetricAt": 1750299750031,
+      "lastMetricAt": 1750299759887,
+      "period": "1750299750000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "plugins.metrics-by-endpoint./api/v1/report/accounting-entries.errors.ETIMEDOUT": 10,
+        "errors.ETIMEDOUT": 10,
+        "vusers.failed": 10,
+        "vusers.created_by_name.[GET] get Accounting entries report": 20,
+        "vusers.created": 20,
+        "http.requests": 20
+      },
+      "rates": {
+        "http.request_rate": 2
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1750299760036,
+      "lastCounterAt": 1750299769908,
+      "firstMetricAt": 1750299760036,
+      "lastMetricAt": 1750299769908,
+      "period": "1750299760000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "plugins.metrics-by-endpoint./api/v1/report/accounting-entries.errors.ETIMEDOUT": 11,
+        "errors.ETIMEDOUT": 11,
+        "vusers.failed": 11,
+        "vusers.created_by_name.[GET] get Accounting entries report": 19,
+        "vusers.created": 19,
+        "http.requests": 19
+      },
+      "rates": {
+        "http.request_rate": 2
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1750299770043,
+      "lastCounterAt": 1750299779910,
+      "firstMetricAt": 1750299770043,
+      "lastMetricAt": 1750299779910,
+      "period": "1750299770000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "plugins.metrics-by-endpoint./api/v1/report/accounting-entries.errors.ETIMEDOUT": 20,
+        "errors.ETIMEDOUT": 20,
+        "vusers.failed": 20
+      },
+      "rates": {},
+      "firstCounterAt": 1750299780038,
+      "lastCounterAt": 1750299789888,
+      "firstMetricAt": 1750299780038,
+      "lastMetricAt": 1750299789888,
+      "period": "1750299780000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "plugins.metrics-by-endpoint./api/v1/report/accounting-entries.errors.ETIMEDOUT": 20,
+        "errors.ETIMEDOUT": 20,
+        "vusers.failed": 20
+      },
+      "rates": {},
+      "firstCounterAt": 1750299790047,
+      "lastCounterAt": 1750299799905,
+      "firstMetricAt": 1750299790047,
+      "lastMetricAt": 1750299799905,
+      "period": "1750299790000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "plugins.metrics-by-endpoint./api/v1/report/accounting-entries.errors.ETIMEDOUT": 19,
+        "errors.ETIMEDOUT": 19,
+        "vusers.failed": 19
+      },
+      "rates": {},
+      "firstCounterAt": 1750299800060,
+      "lastCounterAt": 1750299809912,
+      "firstMetricAt": 1750299800060,
+      "lastMetricAt": 1750299809912,
+      "period": "1750299800000",
+      "summaries": {},
+      "histograms": {}
+    }
+  ]
+}

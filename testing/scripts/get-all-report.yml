@@ -1,0 +1,13 @@
+config:
+  target: "http://localhost:8082/api/v1/report"
+  phases:
+    - duration: 30
+      arrivalRate: 1         # 1 req/s
+      name: Light test for heavy response
+  http:
+    timeout: 30             # en segundos
+scenarios:
+  - name: "[GET] get Accounting entries report"
+    flow:
+      - get:
+          url: "/accounting-entries"

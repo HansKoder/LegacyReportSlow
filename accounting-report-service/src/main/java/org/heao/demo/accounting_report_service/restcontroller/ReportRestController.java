@@ -1,6 +1,7 @@
 package org.heao.demo.accounting_report_service.restcontroller;
 
 import org.heao.demo.accounting_report_service.dto.AccountingEntryResponse;
+import org.heao.demo.accounting_report_service.entity.AccountingEntry;
 import org.heao.demo.accounting_report_service.service.AccountingEntryService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -25,7 +26,7 @@ public class ReportRestController {
     }
 
     @GetMapping("/accounting-entries")
-    public ResponseEntity<List<AccountingEntryResponse>> getAllReport () {
+    public ResponseEntity<List<AccountingEntry>> getAllReport () {
         return ResponseEntity.ok(service.findAll());
     }
 }

@@ -12,3 +12,7 @@
 
 ### VS Code ###
 .vscode/
+
+### Node_modules ###
+/testing/node_modules
+/scripts/time/node_modules
