@@ -1,8 +1,29 @@
 services:
-  liquibase:
-    container_name: liquibase
+  
+  liquibase_montecello:
+    container_name: liquibase_montecello
     image: liquibase/liquibase
-    command: update --changelog-file=changelog.xml --username=user --password=pass --url=jdbc:postgresql://db:5432/reportsdb
+    command: update --changelog-file=changelog.xml --username=montecello_user --password=montecello_pass --url=jdbc:postgresql://db:5432/montecello
+    volumes:
+      - ./config/changelog.xml:/liquibase/changelog.xml
+      - ./scripts:/liquibase/scripts
+    networks:
+      - report-net
+
+  liquibase_azurry:
+    container_name: liquibase_azurry
+    image: liquibase/liquibase
+    command: update --changelog-file=changelog.xml --username=azurry_user --password=azurry_pass --url=jdbc:postgresql://db:5432/azurry
+    volumes:
+      - ./config/changelog.xml:/liquibase/changelog.xml
+      - ./scripts:/liquibase/scripts
+    networks:
+      - report-net
+
+  liquibase_castle:
+    container_name: liquibase_castle
+    image: liquibase/liquibase
+    command: update --changelog-file=changelog.xml --username=castle_user --password=castle_pass --url=jdbc:postgresql://db:5432/castle
     volumes:
       - ./config/changelog.xml:/liquibase/changelog.xml
       - ./scripts:/liquibase/scripts
