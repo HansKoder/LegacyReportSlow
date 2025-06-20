@@ -17,7 +17,8 @@ public class AccountingEntryScript implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         System.out.println("CLI generator account report");
-        repository.saveAll(GeneratorAccountingReportData.generateRandomData(1000_000));
+        repository.saveAll(GeneratorAccountingReportData.generateRandomData(3));
         System.out.println("Date upload successfully");
+
     }
 }

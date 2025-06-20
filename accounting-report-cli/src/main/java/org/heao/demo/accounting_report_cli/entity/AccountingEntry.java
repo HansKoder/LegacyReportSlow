@@ -1,8 +1,10 @@
 package org.heao.demo.accounting_report_cli.entity;
 
 import jakarta.persistence.*;
+import org.springframework.cglib.core.Local;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Entity
@@ -28,7 +30,7 @@ public class AccountingEntry {
 
     // must be LocalDate
     @Column(name = "entry_date")
-    private String entryDate;
+    private LocalDate entryDate;
 
     @Column(name = "amount")
     private BigDecimal amount;
@@ -80,11 +82,11 @@ public class AccountingEntry {
         this.documentType = documentType;
     }
 
-    public String getEntryDate() {
+    public LocalDate getEntryDate() {
         return entryDate;
     }
 
-    public void setEntryDate(String entryDate) {
+    public void setEntryDate(LocalDate entryDate) {
         this.entryDate = entryDate;
     }
 
@@ -134,7 +136,7 @@ public class AccountingEntry {
         private String customerTaxId;
         private String documentCode;
         private String documentType;
-        private String entryDate;
+        private LocalDate entryDate;
         private BigDecimal amount;
         private String currency;
         private String accountCode;
@@ -168,7 +170,7 @@ public class AccountingEntry {
             return this;
         }
 
-        public AccountingEntryBuilder entryDate(String entryDate) {
+        public AccountingEntryBuilder entryDate(LocalDate entryDate) {
             this.entryDate = entryDate;
             return this;
         }
@@ -212,5 +214,22 @@ public class AccountingEntry {
             accountingEntry.setCreatedAt(createdAt);
             return accountingEntry;
         }
+    }
+
+    @Override
+    public String toString() {
+        return "AccountingEntry{" +
+                "id=" + id +
+                ", customerName='" + customerName + '\'' +
+                ", customerTaxId='" + customerTaxId + '\'' +
+                ", documentCode='" + documentCode + '\'' +
+                ", documentType='" + documentType + '\'' +
+                ", entryDate=" + entryDate +
+                ", amount=" + amount +
+                ", currency='" + currency + '\'' +
+                ", accountCode='" + accountCode + '\'' +
+                ", accountName='" + accountName + '\'' +
+                ", createdAt=" + createdAt +
+                '}';
     }
 }

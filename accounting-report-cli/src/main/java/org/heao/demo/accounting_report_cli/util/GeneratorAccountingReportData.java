@@ -3,6 +3,7 @@ package org.heao.demo.accounting_report_cli.util;
 import org.heao.demo.accounting_report_cli.entity.AccountingEntry;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +22,8 @@ public class GeneratorAccountingReportData {
         CircularLinkedList<String> documentTypeCycled = new CircularLinkedList<>(
                 List.of("INVOICE", "RECEIPT"));
 
+        CircularLinkedList<LocalDate> fakeDateCycled = RandomDate.loadFakePastDates();
+
         List<AccountingEntry> entries = new ArrayList<>();
 
         for (int i = 0; i < cant; i++) {
@@ -30,7 +33,7 @@ public class GeneratorAccountingReportData {
                             .customerTaxId("800." + i + "-9")
                             .documentCode("DOC-2025-" + String.format("%05d", i))
                             .documentType(documentTypeCycled.next())
-                            .entryDate("2025-06-18")
+                            .entryDate(fakeDateCycled.next())
                             .amount(BigDecimal.valueOf(Math.random() * 10000))
                             .currency(concurrencyCycled.next())
                             .accountCode("110505")
