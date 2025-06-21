@@ -1,24 +1,24 @@
 package org.heao.demo.accounting_report_cli.scripts;
 
-import org.heao.demo.accounting_report_cli.repository.AccountEntryRepository;
-import org.heao.demo.accounting_report_cli.util.GeneratorAccountingReportData;
+import org.heao.demo.accounting_report_cli.config.CustomerEnum;
+import org.heao.demo.accounting_report_cli.service.CustomerDataLoaderService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 @Component
 public class AccountingEntryScript implements CommandLineRunner {
 
-    private final AccountEntryRepository repository;
+    private final CustomerDataLoaderService customerDataLoaderService;
 
-    public AccountingEntryScript(AccountEntryRepository repository) {
-        this.repository = repository;
+    public AccountingEntryScript(CustomerDataLoaderService customerDataLoaderService) {
+        this.customerDataLoaderService = customerDataLoaderService;
     }
 
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String... args) {
         System.out.println("CLI generator account report");
-        repository.saveAll(GeneratorAccountingReportData.generateRandomData(3));
-        System.out.println("Date upload successfully");
-
+        customerDataLoaderService.loadData(CustomerEnum.MONTECELLO, 100);
+        customerDataLoaderService.loadData(CustomerEnum.AZURRY, 100);
+        customerDataLoaderService.loadData(CustomerEnum.CASTLE, 100);
     }
 }

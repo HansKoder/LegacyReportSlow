@@ -8,7 +8,7 @@ services:
       - ./config/changelog.xml:/liquibase/changelog.xml
       - ./scripts:/liquibase/scripts
     networks:
-      - report-net
+      - docker-compose_report-net
 
   liquibase_azurry:
     container_name: liquibase_azurry
@@ -18,7 +18,7 @@ services:
       - ./config/changelog.xml:/liquibase/changelog.xml
       - ./scripts:/liquibase/scripts
     networks:
-      - report-net
+      - docker-compose_report-net
 
   liquibase_castle:
     container_name: liquibase_castle
@@ -28,8 +28,9 @@ services:
       - ./config/changelog.xml:/liquibase/changelog.xml
       - ./scripts:/liquibase/scripts
     networks:
-      - report-net
+      - docker-compose_report-net
 
 
 networks:
-  report-net:
+  docker-compose_report-net:
+    external: true
