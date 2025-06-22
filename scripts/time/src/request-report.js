@@ -1,12 +1,14 @@
 //const axios = require('axios');
 import axios from "axios";
 
-export const makeRequestAccountingEntries = async () => {
-  console.log('>> Request accouting entries')
+
+const makeRequest = async (path) => {
+  const url = `http://localhost:8082/${path}`;
+  console.log(`>> Request ${url}`)
   const start = Date.now();
 
-  try {
-    const response = await axios.get("http://localhost:8082/api/v1/report/accounting-entries");
+  try {    
+    const response = await axios.get(url);
     const end = Date.now();
     const durationMs = end - start;
 
@@ -17,18 +19,10 @@ export const makeRequestAccountingEntries = async () => {
   }
 }
 
+export const makeRequestAccountingEntries = async () => {
+  await makeRequest('api/v2/report/accounting-entries');
+}
+
 export const makeRequestAccountingPerCustomer = async (customerName) => {
-  console.log('>> Request accounting per customer')
-  const start = Date.now();
-
-  try {
-    const response = await axios.get(`http://localhost:8082/api/v1/report/accounting-entries/${customerName}`);
-    const end = Date.now();
-    const durationMs = end - start;
-
-    console.log(`Process runing for : ${durationMs} ms`);
-    console.log(`Count of records: ${response.data.length}`);
-  } catch (err) {
-    console.error("Error:", err.message);
-  }
+  await makeRequest(`api/v2/report/accounting-entries/${customerName}`);  
 }

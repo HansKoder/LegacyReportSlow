@@ -25,11 +25,13 @@ public class ReportRestController {
         return ResponseEntity.ok("Hello World");
     }
 
+    @Deprecated
     @GetMapping("/accounting-entries")
     public ResponseEntity<List<AccountingEntry>> getAllReport () {
         return ResponseEntity.ok(service.findAll());
     }
 
+    @Deprecated
     @GetMapping("/accounting-entries/{customer}")
     public ResponseEntity<List<AccountingEntry>> getCustomerName (@PathVariable("customer") String customer) {
         return ResponseEntity.ok(service.getCustomerName(customer));
