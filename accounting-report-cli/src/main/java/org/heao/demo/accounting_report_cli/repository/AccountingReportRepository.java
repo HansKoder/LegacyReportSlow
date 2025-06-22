@@ -2,6 +2,8 @@ package org.heao.demo.accounting_report_cli.repository;
 
 import org.heao.demo.accounting_report_cli.model.AccountingEntryModel;
 
+import java.util.List;
+
 public interface AccountingReportRepository {
-    void save (AccountingEntryModel model);
+    void saveAll (List<AccountingEntryModel> list);
 }
