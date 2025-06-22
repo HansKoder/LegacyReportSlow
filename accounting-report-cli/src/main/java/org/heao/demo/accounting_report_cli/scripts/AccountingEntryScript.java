@@ -17,8 +17,8 @@ public class AccountingEntryScript implements CommandLineRunner {
     @Override
     public void run(String... args) {
         System.out.println("CLI generator account report");
-        customerDataLoaderService.loadData(CustomerEnum.MONTECELLO, 100);
-        customerDataLoaderService.loadData(CustomerEnum.AZURRY, 100);
-        customerDataLoaderService.loadData(CustomerEnum.CASTLE, 100);
+        customerDataLoaderService.loadData(CustomerEnum.MONTECELLO, 1_000_000);
+        customerDataLoaderService.loadData(CustomerEnum.AZURRY, 1_000_000);
+        customerDataLoaderService.loadData(CustomerEnum.CASTLE, 1_000_000);
     }
 }

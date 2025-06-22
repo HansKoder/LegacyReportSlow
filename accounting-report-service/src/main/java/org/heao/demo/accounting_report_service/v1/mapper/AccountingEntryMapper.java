@@ -1,7 +1,7 @@
-package org.heao.demo.accounting_report_service.mapper;
+package org.heao.demo.accounting_report_service.v1.mapper;
 
-import org.heao.demo.accounting_report_service.dto.AccountingEntryResponse;
-import org.heao.demo.accounting_report_service.entity.AccountingEntry;
+import org.heao.demo.accounting_report_service.v1.dto.AccountingEntryResponse;
+import org.heao.demo.accounting_report_service.v1.entity.AccountingEntry;
 
 public class AccountingEntryMapper {
 

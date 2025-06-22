@@ -1,6 +1,6 @@
-package org.heao.demo.accounting_report_service.service;
+package org.heao.demo.accounting_report_service.v1.service;
 
-import org.heao.demo.accounting_report_service.entity.AccountingEntry;
+import org.heao.demo.accounting_report_service.v1.entity.AccountingEntry;
 
 import java.util.List;
 

@@ -11,8 +11,6 @@ public class RandomDate {
     }
 
     public static CircularLinkedList<LocalDate> loadFakePastDates () {
-        System.out.println("Load Fake Past Dates");
-
         List<LocalDate> days = new ArrayList<>();
         for (int i = 0; i < 365; i++)
             days.add(buildDateDaysAgo(i));

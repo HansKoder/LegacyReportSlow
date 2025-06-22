@@ -1,4 +1,4 @@
-package org.heao.demo.accounting_report_service.entity;
+package org.heao.demo.accounting_report_service.v1.entity;
 
 import jakarta.persistence.*;
 

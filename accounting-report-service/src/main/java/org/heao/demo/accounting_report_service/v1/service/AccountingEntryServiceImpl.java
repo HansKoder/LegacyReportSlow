@@ -1,7 +1,7 @@
-package org.heao.demo.accounting_report_service.service;
+package org.heao.demo.accounting_report_service.v1.service;
 
-import org.heao.demo.accounting_report_service.entity.AccountingEntry;
-import org.heao.demo.accounting_report_service.repository.AccountingEntryRepository;
+import org.heao.demo.accounting_report_service.v1.entity.AccountingEntry;
+import org.heao.demo.accounting_report_service.v1.repository.AccountingEntryRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

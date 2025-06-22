@@ -1,4 +1,4 @@
-package org.heao.demo.accounting_report_service.dto;
+package org.heao.demo.accounting_report_service.v1.dto;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;

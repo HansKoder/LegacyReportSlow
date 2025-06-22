@@ -1,7 +1,7 @@
-package org.heao.demo.accounting_report_service.restcontroller;
+package org.heao.demo.accounting_report_service.v1.restcontroller;
 
-import org.heao.demo.accounting_report_service.entity.AccountingEntry;
-import org.heao.demo.accounting_report_service.service.AccountingEntryService;
+import org.heao.demo.accounting_report_service.v1.entity.AccountingEntry;
+import org.heao.demo.accounting_report_service.v1.service.AccountingEntryService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
